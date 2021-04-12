@@ -17,7 +17,7 @@ pipeline {
     // Use the 'maven' Jenkins agent image which is provided with OpenShift 
     agent { 
       kubernetes { 
-        maven
+        label "maven"
       }
     }
     stages {
